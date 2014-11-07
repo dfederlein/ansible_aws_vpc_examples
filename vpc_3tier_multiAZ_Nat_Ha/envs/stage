@@ -1,7 +1,7 @@
 ---
 # The variables for dev vpc environment
 
-ec2_region: "us-east-1"
+ec2_region: "us-west-2"
 vpc_name: benvpc
 vpc_cidr_block: 10.1.0.0/16
 nat_profile_name: "nat_test"
@@ -33,7 +33,7 @@ vpc_route_tables_public:
        - dest: 0.0.0.0/0
          gw: igw
 
-vpc_nat_instance_id: ami-4f9fee26
+vpc_nat_instance_id: ami-52ff7262
 vpc_nat_instance_type: t1.micro
 
 # The variable for configuring security group and thier ingress rules
